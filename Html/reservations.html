@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ruppo restaurant || Reservations</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" type="text/css" href="../../styles.css" />
+		<link rel="icon" type="image/png" href="../../img/svg/ruppoLogo.png" />
+	</head>
+	<body id="reservations-body">
+		<div class="outer-cont">
+			<div class="inner-cont" id="inner-cont-res">
+				<a href="./index.html" class="logo">
+					<div class="logo-top"><span id="logo-r">R</span>P</div>
+					<div class="logo-bottom">RUPPO</div>
+				</a>
+				<div class="main-cont">
+					<section class="reservations-page">
+						<h1 class="section-head">Reservations</h1>
+						<p class="section-text">
+							Reservations are taken for full meals only. Tables can be reserved
+							for groups ranging from 2 to 10 people. For bigger reservations
+							please contact the venue to arrange a private dining room.
+						</p>
+						<p class="section-text">
+							Please be aware that we may kindly ask the table back after 2
+							hours.
+						</p>
+						<h1 class="section-head">Make a Reservation</h1>
+						<small id="error-message"></small>
+						<form id="reserve-form" action="#">
+							<input
+								type="date"
+								id="date-select"
+								class="date-select"
+								min="2020-09-23"
+							/>
+							<div class="selects">
+								<select name="people-num" id="people-num" class="people-num">
+									<option value="">--</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option></select
+								><span id="people-img"><i class="fa fa-user"></i></span>
+								<select name="time-book" id="time-book" class="time-book">
+									<option value="">--:--</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option></select
+								><span id="time-img"><i class="far fa-clock"></i></span>
+							</div>
+							<button id="reserve-btn" class="btn btn-reserve" type="button">
+								<a class="btn-link" href="./confirm_reserve.html">Reserve</a>
+							</button>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script src="../../JS/reservations.js"></script>
+	</body>
+</html>

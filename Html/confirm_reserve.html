@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ruppo restaurant || Reservations</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../../styles.css" />
+		<link rel="icon" type="image/png" href="../../img/svg/ruppoLogo.png" />
+	</head>
+	<body id="reservations-body">
+		<div class="outer-cont">
+			<div class="inner-cont" id="inner-cont-res">
+				<a href="../Html/index.html" class="logo">
+					<div class="logo-top"><span id="logo-r">R</span>P</div>
+					<div class="logo-bottom">RUPPO</div>
+				</a>
+				<div class="main-cont">
+					<section class="confirm-reserve-sec">
+						<h1 class="section-head">Confrim Details</h1>
+						<small id="error-message-2"></small>
+						<form class="confirm-form" action="#" autocomplete="off">
+							<input
+								class="book-det-inp"
+								id="book-title"
+								type="text"
+								placeholder="Title"
+							/>
+							<input
+								class="book-det-inp"
+								id="book-name"
+								type="text"
+								placeholder="First Name"
+							/>
+							<input
+								class="book-det-inp"
+								id="book-sname"
+								type="text"
+								placeholder="Second Name"
+							/>
+							<input
+								class="book-det-inp"
+								id="book-email"
+								type="text"
+								placeholder="Email Address"
+							/>
+							<textarea
+								class="book-add-info"
+								id="add-info"
+								cols="30"
+								rows="10"
+								placeholder="Additional info"
+							></textarea>
+							<button class="btn btn-confirm-book">
+								<a href="#" class="btn-link">Confirm Reservation</a>
+							</button>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script src="../../JS/confirm_reserve.js"></script>
+	</body>
+</html>
