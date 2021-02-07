@@ -23,8 +23,8 @@ function initCarousel(img, arr) {
 			img.classList.remove('hide');
 			arr.forEach((el) => (el.className = `circle`));
 			arr[count - 1].className = `circle active`;
-		}, 1100);
-	}, 2200);
+		}, 1000);
+	}, 3000);
 }
 
 // Determine which count to use and increase
