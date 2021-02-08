@@ -23,8 +23,8 @@ function initCarousel(img, arr) {
 			img.classList.remove('hide');
 			arr.forEach((el) => (el.className = `circle`));
 			arr[count - 1].className = `circle active`;
-		}, 1000);
-	}, 3000);
+		}, 100);
+	}, 3500);
 }
 
 // Determine which count to use and increase
@@ -71,7 +71,7 @@ function changeManually(el) {
 	// Update the counts
 	updateCount(imageEl.id, elIndex);
 	// Resume interval
-	intervalID = setInterval(initCarousel, 7000, imageEl, allChild);
+	intervalID = setInterval(initCarousel, 10000, imageEl, allChild);
 }
 
 // Update count on click on image nav
@@ -114,7 +114,7 @@ function checkVisbility(arr) {
 		if (isInViewport(image)) {
 			const arrNodeEl = image.parentNode.lastElementChild;
 			const carArr = arrNodeEl.querySelectorAll('.circle');
-			intervalID = setInterval(initCarousel, 7000, image, carArr);
+			intervalID = setInterval(initCarousel, 10000, image, carArr);
 		}
 	});
 }
@@ -151,4 +151,4 @@ navs.forEach((nav) => {
 });
 
 // initiate carousel
-let intervalID = setInterval(initCarousel, 7000, imgArr[0], restImageNav);
+let intervalID = setInterval(initCarousel, 15000, imgArr[0], restImageNav);
